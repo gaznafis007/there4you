@@ -65,13 +65,23 @@ function App() {
         >
           <Link to="/feed">
             {/* <h1 style={{ color: "#fff" }}>There4You</h1> */}
-            <img src={logo} alt="logo"
-              style={{
-                width: "10%",
-                height: "10%"
-              }}
-            />
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              paddingLeft: '300px',
+              // width: '100vh',
+              height: '100vh',
+            }}>
+              <img src={logo} alt="logo"
+                style={{
+                  width: "10%",
+                  height: "auto",
+                }}
+              />
+            </div>
           </Link>
+
 
           <Menu
             theme="dark"
@@ -121,7 +131,20 @@ function App() {
             textAlign: "center",
           }}
         >
-          There4You
+          <p style={{
+            fontWeight: '800',
+            marginBottom: '2%'
+          }}>There4You</p>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <p style={{
+              width: '50%',
+            }}>দেশের উদ্ভুত দুর্যোগ পরিস্থিতিতে ক্ষতিগ্রস্তদের সহায়তা কার্যক্রমকে সুসংগঠিত করার জন্য রিফ্লেকটিভ টিনস এর একটি উদ্যোগ। রিফ্লেকটিভ টিনস মূলত পিছিয়ে পড়া শিক্ষা প্রতিষ্ঠানের গুনগত মান উন্নয়নে কাজ করে।
+            </p>
+          </div>
         </Footer>
       </Layout>
     </Router >
