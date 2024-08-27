@@ -8,6 +8,7 @@ import Feed from "./components/Feed";
 import Profile from "./components/Profile";
 import Search from "./components/Search";
 import Heatmap from "./components/Heatmap";
+import logo from "./images/white-transparent-logo.png"
 
 import { Layout, Menu, theme } from "antd";
 const { Header, Content, Footer } = Layout;
@@ -59,11 +60,17 @@ function App() {
             alignItems: "center",
             justifyContent: "space-between",
             gap: "16px",
-            padding: "0 16px",
+            padding: "20px 16px",
           }}
         >
           <Link to="/feed">
-            <h1 style={{ color: "#fff" }}>There4You</h1>
+            {/* <h1 style={{ color: "#fff" }}>There4You</h1> */}
+            <img src={logo} alt="logo"
+              style={{
+                width: "10%",
+                height: "10%"
+              }}
+            />
           </Link>
 
           <Menu
@@ -117,7 +124,7 @@ function App() {
           There4You
         </Footer>
       </Layout>
-    </Router>
+    </Router >
   );
 }
 
