@@ -131,7 +131,6 @@ function Feed() {
   const [posts, setPosts] = useState([]);
   const [content, setContent] = useState("");
   const navigate = useNavigate();
-
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -228,7 +227,10 @@ function Feed() {
       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
         {posts.map((post) => (
           <Card key={post._id} title={post.zilla} style={{ backgroundColor: "#e6e8ea" }}>
-            <p>{post.content}</p>
+            <p>{post.content}
+              <br />
+              Mobile No: {post.phonenumber}
+            </p>
           </Card>
         ))}
       </div>
