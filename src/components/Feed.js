@@ -131,7 +131,6 @@ function Feed() {
   const [posts, setPosts] = useState([]);
   const [content, setContent] = useState("");
   const navigate = useNavigate();
-  console.log(posts);
   useEffect(() => {
     const fetchPosts = async () => {
       try {
